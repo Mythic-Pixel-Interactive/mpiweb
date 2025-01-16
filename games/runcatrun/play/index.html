@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Play Run Cat Run | Mythic Pixel Interactive</title>
+        <link rel="stylesheet" href="../../../css/rcr.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Run Cat Run</h1>
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img src="../../../img/cs.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <img src="../../../img/go.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img src="../../../img/gp.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img src="../../../img/lobby.jpg" style="width:100%">
+            </div>
+        
+            <!-- <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img src="../../../img/" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img src="../../../img/" style="width:100%">
+            </div> -->
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="../../../img/cs.png" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../../../img/go.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../../../img/gp.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../../../img/lobby.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+            </div>
+        </div>
+        <script id="images">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+        <div class="about-game">
+            <h1>About The Game</h1>
+            <table>
+                <tr>
+                    <td>Publisher</td>
+                    <td class="td2">Mythic Pixel Interactive</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td class="td2">Mythic Pixel Interactive</td>
+                </tr>
+                <tr>
+                    <td>Platforms</td>
+                    <td class="td2">Android</td>
+                </tr>
+                <tr>
+                    <td>Genres</td>
+                    <td class="td2"><a href="/games/library/strategy" target="_blank">Strategy</a></td>
+                </tr>
+                <tr>
+                    <td>Languages</td>
+                    <td class="td2">English</td2>
+                </tr>
+                <tr>
+                    <td>Release Date</td>
+                    <td class="td2">February 28th, 2025 12:00 AM EST</td>
+                </tr>
+                <tr>
+                    <td>System Requirements</td>
+                    <td class="td2"><a href="#system-requirements">View</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="description">
+            <h1>Description</h1>
+            <p>Run Cat Run is a fast-paced, endless runner game where you take control of an agile cat on a daring dash through the forest! Leap over trees, avoid obstacles, and see how far you can go. With simple tap-to-jump controls, arcade-like visuals, and addictive gameplay, Run Cat Run is perfect for players of all ages looking for a fun and challenging experience on the go. How far can your cat run?</p>
+        </div>
+        <div class="system-requirements" id="system-requirements">
+            <h1>System Requirements</h1>
+            <table>
+                <tr>
+                    <td>Android minimum requirements:</td>
+                    <td class="td2">Android recommended requirements:</td>
+                </tr>
+                <tr>
+                    <td><strong>Android Version:</strong> 13</td>
+                    <td class="td2"><strong>Android Version:</strong> 14</td>
+                </tr>
+                <tr>
+                    <td><strong>Memory:</strong> 1GB</td>
+                    <td class="td2"><strong>Memory:</strong> 1GB</td>
+                </tr>
+                <tr>
+                    <td><strong>Storage:</strong> 32GB</td>
+                    <td class="td2"><strong>Storage:</strong> 32GB</a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
