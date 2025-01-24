@@ -1,0 +1,197 @@
+body {
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.play table {
+  align-items: left;
+  align-self: left;
+  align-content: left;
+  text-align: left;
+  padding-left: 1%;
+  -ms-grid-column-align: left;
+}
+.playhome button {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.playhome p {
+  color: white;
+  font-family: "Source Code Pro";
+  font-size: 25px;
+}
+button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 {
+    color:white;
+}
+.about-game h1 {
+    size: 100px;
+    color: white;
+    font-family: 'Oswald', serif;
+}
+
+.about-game p {
+    font-size: 25px;
+    color: white;
+    padding-left: 10%;
+    align-content: center;
+}
+.about-game p2 {
+    font-size: 25px;
+    color: white;
+    align-content: center;
+}
+.about-game table{
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+.about-game td{
+    width: 25%;
+    height: 50px;
+}
+.about-game .td2{
+    width: 50%;
+    font-family: "Source Code Pro";
+}
+.about-game a:link{
+    color:aqua
+}
+.about-game a:visited {
+    color:aqua
+} 
+.description h1{
+    color: white;
+    font-family: 'Oswald', serif;
+}
+.description p{
+    color: white;
+    font-family: "Source Code Pro";
+}
+.system-requirements h1{
+    color: white;
+    font-family: 'Oswald', serif;
+}
+.system-requirements p{
+    color: white;
+    font-family: "Source Code Pro";
+}
+.system-requirements table{
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+.system-requirements td{
+    width: 55%;
+}
+.system-requirements .td2{
+    width: 50%;
+    font-family: "Source Code Pro";
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+
+/* Fonts */

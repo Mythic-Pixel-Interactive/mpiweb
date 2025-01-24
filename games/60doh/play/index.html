@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="/img/TOMF.ico"
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Play 60 Days Of Horror | Mythic Pixel Interactive</title>
+        <link rel="stylesheet" href="/css/60doh.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Pirata+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>60 Days Of Horror</h1>
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img src="/img/TOMF_MENU.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <img src="/img/" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img src="/img/" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img src="/img/" style="width:100%">
+            </div>
+        
+            <!-- <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img src="../../../img/" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img src="../../../img/" style="width:100%">
+            </div> -->
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/img/TOMF_MENU.png" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+            </div>
+        </div>
+        <div id="play">
+            <div class="playbeta">
+                <h1>Download the game</h1>
+                <p>Coming Soon!</p>
+                <!-- <a href="https://play.google.com/store/apps/details?id=com.mythicpixelinteractive.runcatrun/" target="_blank">
+                    <button type="button">Download now!</button>
+                </a>
+                <a href="/games/library/strategy/" target="_blank">
+                    <button type="button">Join the beta testing!</button>
+                </a> -->
+            </div>
+        </div>
+        <script id="images">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+        <div class="about-game">
+            <h1>About The Game</h1>
+            <table>
+                <tr>
+                    <td>Publisher</td>
+                    <td class="td2">Mythic Pixel Interactive</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td class="td2">Mythic Pixel Interactive</td>
+                </tr>
+                <tr>
+                    <td>Platforms</td>
+                    <td class="td2">PC</td>
+                </tr>
+                <tr>
+                    <td>Genres</td>
+                    <td class="td2"><a href="/games/library/rpg" target="_blank">RPG</a></td>
+                </tr>
+                <tr>
+                    <td>Languages</td>
+                    <td class="td2">English</td2>
+                </tr>
+                <tr>
+                    <td>Release Date</td>
+                    <td class="td2">TBD</td>
+                </tr>
+                <tr>
+                    <td>System Requirements</td>
+                    <td class="td2"><a href="#system-requirements">View</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="description">
+            <h1>Description</h1>
+            <p>Insert Filler Text Here... (You thought you could get secret information didn't you. Not today, try again another day. However there is some secret information if your smart enough to find it!)</p>
+        </div>
+        <!-- <div class="system-requirements" id="system-requirements">
+            <h1>System Requirements</h1>
+            <table>
+                <tr>
+                    <td>Minimum requirements:</td>
+                    <td class="td2">Recommended requirements:</td>
+                </tr>
+                <tr>
+                    <td><strong>Requires a 64-bit processor and operating system</strong></td>
+                    <td class="td2"><strong>Requires a 64-bit processor and operating system</strong></td>
+                </tr>
+                <tr>
+                    <td>OS:<strong> Windows 10 64bit</strong></td>
+                    <td class="td2">OS:<strong> Windows 11 64bit</strong></td>
+                </tr>
+                <tr>
+                    <td>Processor:<strong> Intel Core i7-12700, AMD Ryzen 7 3800x, or better</strong></td>
+                    <td class="td2">Processor:<strong> Intel Core i9-13900, AMD Ryzen 7 7800X3D, or better</strong></td>
+                </tr>
+                <tr>
+                    <td>Memory:<strong> 16GB</strong></td>
+                    <td class="td2">Memory:<strong> 32GB</strong></td>
+                </tr>
+                <tr>
+                    <td>Graphics:<strong> Geforce RTX 4060, AMD Radeon RX 7600, or better (min 8GB VRAM, DX12 support)</strong></td>
+                    <td class="td2">Graphics:<strong> Geforce RTX 4080, AMD Radeon RX 7900 XTX, or better (min 10GB VRAM, DX12 support)</strong></td>
+                </tr>
+                <tr>
+                    <td>DirectX:<strong> Version 12</strong></td>
+                    <td class="td2">DirectX:<strong> Version 12</strong></td>
+                </tr>
+                <tr>
+                    <td>Network:<strong> Broadband Internet Connection</strong></td>
+                    <td class="td2">Network:<strong> Broadband Internet Connection</strong></td>
+                </tr>
+                <tr>
+                    <td>Storage:<strong> 100GB</strong></td>
+                    <td class="td2">Storage:<strong> 100GB</strong></td>
+                </tr>
+                <tr>
+                    <td>Sound card:<strong> Sound card</strong></td>
+                    <td class="td2">Sound card:<strong> Sound card</strong></td>
+                </tr>
+                <tr>
+                    <td>VR Support:<strong> NO</strong></td>
+                    <td class="td2">VR Support:<strong> NO NEVER</strong></td>
+                </tr>
+            </table>
+        </div> -->
+    </body>
+</html>
