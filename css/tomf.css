@@ -12,11 +12,32 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 h1 {
     font-size: 50px;
     color:black;
     font-family: 'Pirata One', serif;
+}
+.playhome button {
+  background-color: white;
+  border-color: #e1b944;
+  border: 50% #e1b944;
+  border-width: 50%;
+  border-radius: 5%;
+  border-style: solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.playhome p {
+  color: black;
+  font-family: 'Pirata One', serif;
+  font-size: 25px;
 }
 .play p {
   font-family: 'Pirata One', serif;

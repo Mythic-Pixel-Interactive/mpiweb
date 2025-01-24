@@ -3,6 +3,21 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+.playhome button {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.playhome p {
+  color: white;
+  font-family: "Source Code Pro";
+  font-size: 25px;
+}
 button {
   background-color: yellow;
   border: none;
@@ -12,6 +27,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 h1 {
     color:white;
