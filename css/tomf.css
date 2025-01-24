@@ -18,6 +18,14 @@ h1 {
     color:black;
     font-family: 'Pirata One', serif;
 }
+.play p {
+  font-family: 'Pirata One', serif;
+  font-size: 25px;
+}
+.playbeta p {
+  font-family: 'Pirata One', serif;
+  font-size: 25px;
+}
 .about-game h1 {
     font-size: 50px;
     color: black;
