@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.playhome table {
+  align-items: left;
+  align-self: left;
+  align-content: left;
+  text-align: left;
+  padding-left: 1%;
+  -ms-grid-column-align: left;
+  grid-row: span;
+  padding-left: 100;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.playhome table a{
+    cursor: pointer;
+}
+.playhome button {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.playhome p {
+  color: white;
+  font-family: "Source Code Pro";
+  font-size: 25px;
+}
+button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 {
+    color:white;
+}
+.about-game h1 {
+    size: 100px;
+    color: white;
+    font-family: 'Oswald', serif;
+}
+
+.about-game p {
+    font-size: 25px;
+    color: white;
+    padding-left: 10%;
+    align-content: center;
+}
+.about-game p2 {
+    font-size: 25px;
+    color: white;
+    align-content: center;
+}
+.about-game table{
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+.about-game td{
+    width: 25%;
+    height: 50px;
+}
+.about-game .td2{
+    width: 50%;
+    font-family: "Source Code Pro";
+}
+.about-game a:link{
+    color:aqua
+}
+.about-game a:visited {
+    color:aqua
+} 
+.description h1{
+    color: white;
+    font-family: 'Oswald', serif;
+}
+.description p{
+    color: white;
+    font-family: "Source Code Pro";
+}
+.system-requirements h1{
+    color: white;
+    font-family: 'Oswald', serif;
+}
+.system-requirements p{
+    color: white;
+    font-family: "Source Code Pro";
+}
+.system-requirements table{
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+.system-requirements td{
+    width: 55%;
+}
+.system-requirements .td2{
+    width: 50%;
+    font-family: "Source Code Pro";
+}
