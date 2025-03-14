@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the user's language (e.g., "en", "fr", "es")
+            var userLang = navigator.language || navigator.userLanguage;
+
+            // Define redirection URLs based on language
+            var redirectUrls = {
+                "en": "/en-us",
+                "fr": "/fr/",
+                "es": "/es/"
+            };
+
+            // Default URL if language is not specified
+            var defaultUrl = "/en-us/";
+
+            // Redirect to the appropriate URL
+            window.location.href = redirectUrls[userLang.substring(0, 2)] || defaultUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>Please hold while we redirect you to the correct page. For optimal viewing.</p>
+</body>
+</html>
